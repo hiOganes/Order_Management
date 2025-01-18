@@ -6,7 +6,20 @@
         <input type="submit" value="Найти">
     </form>
     {% for order in orders %}
-        <p>{{ order.items }}</p>
+        <hr>
+        <p>Идентификатор: {{ order.id }}</p>
+        <p>Номер столика: {{ order.table_number }}</p>
+        <p>Список блюд:
+        {% for item in order.items %}
+            {% if not forloop.last %}
+                {{ item.name|title }},
+            {% else %}
+                {{ item.name|title }}
+            {% endif %}
+        {% endfor %}
+        </p>
+        <p>Общая стоимость: {{ order.total_price }}</p>
+        <p>Статус: {{ order.status }}</p>
         <form action="{% url 'delete-orders' order.pk %}" method="post" style="display:inline;">
             {% csrf_token %}
             <button type="submit">Удалить</button>
