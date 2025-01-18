@@ -11,7 +11,7 @@ class BaseModel(models.Model):
         default=uuid4,
         primary_key=True,
         editable=False,
-        unique=True
+        unique=True,
     )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

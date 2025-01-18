@@ -1,14 +1,16 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-{% for elem in mainnav %}
-    <p style="display:inline;"><a href="{% url elem.name_url %}">{{ elem.name }}</a></p>
-{% endfor %}
-{% block content %}{% endblock %}
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h3>
+            {% for elem in mainnav %}
+                <p style="display:inline; margin:10px;"><a href="{% url elem.name_url %}">{{ elem.name }}</a></p>
+            {% endfor %}
+        </h3>
+    {% block content %}{% endblock %}
+    </body>
 </html>

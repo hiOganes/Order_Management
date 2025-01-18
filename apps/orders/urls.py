@@ -27,4 +27,5 @@ urlpatterns = [
         views.OrdersUpdateView.as_view(),
         name='update-orders'
     ),
+    path('total/', views.TotalIncome.as_view(), name='total-income'),
 ]
