@@ -4,7 +4,6 @@ from uuid import uuid4
 from django.db import models
 # Other libraries
 # Project libraries
-from apps.common.managers import GetOrNoneManager
 
 
 class BaseModel(models.Model):
@@ -17,7 +16,6 @@ class BaseModel(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    objects = GetOrNoneManager()
 
     class Meta:
         abstract = True

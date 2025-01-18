@@ -7,7 +7,7 @@
 </head>
 <body>
 {% for elem in mainnav %}
-    <a href="{% url elem.name_url %}">{{ elem.name }}</a>
+    <p style="display:inline;"><a href="{% url elem.name_url %}">{{ elem.name }}</a></p>
 {% endfor %}
 {% block content %}{% endblock %}
 </body>

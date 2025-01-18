@@ -1,7 +1,6 @@
 nav = [
-    {'name': 'Order', 'name_url': 'create-orders'},
-    {'name': 'All', 'name_url': 'list-orders'},
-    # {'name': 'Search', 'name_url': 'search'}
+    {'name': 'Сделать заказ', 'name_url': 'create-orders'},
+    {'name': 'Все заказы', 'name_url': 'list-orders'},
     ]
 
 def get_nav(request):
