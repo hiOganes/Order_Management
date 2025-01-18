@@ -7,6 +7,11 @@ from apps.common.models import BaseModel
 
 
 class Orders(BaseModel):
+    class Status(models.TextChoices):
+        WAIT = 'В ожидании', 'В ожидании'
+        DONE = 'Готово', 'Готово'
+        PAID = 'Оплачено','Оплачено'
+
     table_number = models.IntegerField()
     items = models.JSONField()
     total_price = models.DecimalField(
@@ -15,4 +20,4 @@ class Orders(BaseModel):
         blank=True,
         default=0,
     )
-    status = models.CharField(default='В ожидании')
+    status = models.CharField(choices=Status.choices, default=Status.WAIT)

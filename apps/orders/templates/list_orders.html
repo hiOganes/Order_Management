@@ -1,7 +1,19 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% for f in orders %}
-    <p>{{ f.items }}</p>
-{% endfor %}
+    <form method="get">
+        {{ search.as_p }}
+        <input type="submit" value="Найти">
+    </form>
+    {% for order in orders %}
+        <p>{{ order.items }}</p>
+        <form action="{% url 'delete-orders' order.pk %}" method="post" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit">Удалить</button>
+        </form>
+        <form action="{% url 'update-orders' order.pk %}" method="post" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit">Изменить статус</button>
+        </form>
+    {% endfor %}
 {% endblock %}

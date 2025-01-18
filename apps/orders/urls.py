@@ -7,6 +7,24 @@ from apps.orders import views
 
 
 urlpatterns = [
-    path('create-orders/', views.OrdersCreateView.as_view(), name='create-orders'),
-    path('list-orders/', views.OrdersListView.as_view(), name='list-orders'),
+    path(
+        'create/',
+        views.OrdersCreateView.as_view(),
+        name='create-orders'
+    ),
+    path(
+        'list/',
+        views.OrdersListView.as_view(),
+        name='list-orders'
+    ),
+    path(
+        'delete/<uuid:pk>/',
+        views.OrdersDeleteView.as_view(),
+        name='delete-orders'
+    ),
+    path(
+        'update/<uuid:pk>/',
+        views.OrdersUpdateView.as_view(),
+        name='update-orders'
+    ),
 ]
