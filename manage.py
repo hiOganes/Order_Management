@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
+
+# Built-in libraries
 import os
 import sys
+# Framework libraries
+# Other libraries
+# Project libraries
 
 
 def main():

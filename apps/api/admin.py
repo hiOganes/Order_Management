@@ -1,3 +1,5 @@
+# Built-in libraries
+# Framework libraries
 from django.contrib import admin
-
-# Register your models here.
+# Other libraries
+# Project libraries

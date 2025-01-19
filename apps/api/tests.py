@@ -1,3 +1,5 @@
+# Built-in libraries
+# Framework libraries
 from django.test import TestCase
-
-# Create your tests here.
+# Other libraries
+# Project libraries

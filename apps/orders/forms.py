@@ -8,6 +8,7 @@ from apps.orders.models import Orders
 
 class OrdersForm(forms.ModelForm):
     items = forms.JSONField(label='Меню', initial=[{"name": "", "price": ""}])
+    status = forms.ChoiceField(required=False)
     class Meta:
         model = Orders
         fields = ['table_number', 'items', 'status']

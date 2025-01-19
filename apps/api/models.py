@@ -1,3 +1,5 @@
+# Built-in libraries
+# Framework libraries
 from django.db import models
-
-# Create your models here.
+# Other libraries
+# Project libraries

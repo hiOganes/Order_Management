@@ -30,7 +30,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-m#2*ri!c*+2)75tus16c7r%g)_$%ux#au^rzri=7xoza8@0l5e'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -47,8 +47,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Project
     'apps.common.apps.CommonConfig',
     'apps.orders.apps.OrdersConfig',
+    'apps.api.apps.ApiConfig',
+    # REST
+    'rest_framework',
+    # API doc
+    'drf_spectacular',
+    # Other
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -89,6 +97,17 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': json.loads(os.getenv('DATABASES'))
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Order Management API',
+    'DESCRIPTION': 'API for managing the order system',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
 }
 
 
