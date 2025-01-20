@@ -59,10 +59,3 @@
 
 2. Open your browser and go to [Website](http://127.0.0.1:8000/orders/create/)
 3. Open your browser and go to [OpenAPI](http://127.0.0.1:8000/api/schema/swagger-ui/)
-
-## Testing
-
-1. Run tests
-    ```sh
-    python manage.py test
-    ```
