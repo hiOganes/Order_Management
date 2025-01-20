@@ -3,7 +3,7 @@ from http import HTTPStatus
 # Framework libraries
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.filters import SearchFilter, OrderingFilter
+from rest_framework.filters import SearchFilter
 # Other libraries
 from drf_spectacular.utils import extend_schema, OpenApiParameter
 # Project libraries

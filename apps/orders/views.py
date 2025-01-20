@@ -3,8 +3,13 @@ import json
 # Framework libraries
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import View
-from django.http import HttpResponse
-from django.views.generic import UpdateView, ListView, CreateView, DeleteView, TemplateView
+from django.views.generic import (
+    UpdateView,
+    ListView,
+    CreateView,
+    DeleteView,
+    TemplateView
+)
 from django.urls import reverse_lazy
 from django.contrib.postgres.search import SearchVector
 # Other libraries
