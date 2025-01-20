@@ -1,6 +1,6 @@
 # Order management
 
-Веб-приложение на Django для управления заказами в кафе
+Django web application for managing orders in a cafe
 
 ## Table of Contents
 
