@@ -27,7 +27,8 @@
 2. Create and activate a virtual environment
     ```sh
     python -m venv venv
-    source venv/bin/activate  # use `venv\Scripts\activate` for Windows
+    source venv/bin/activate for linux
+    venv\Scripts\activate for Windows
     ```
 
 3. Install dependencies
@@ -39,7 +40,7 @@
     ```env
     DEBUG=True
     SECRET_KEY='your-secret-key'
-    DATABASE_URL='your-database-url'
+    DATABASES = {"ENGINE": "django.db.backends.postgresql", "NAME": "your-name", "USER": "your-user", "PASSWORD": "your-password", "HOST": "localhost", "PORT": "5432"}
     ```
 
 ## Configuration
@@ -47,16 +48,6 @@
 1. Apply database migrations
     ```sh
     python manage.py migrate
-    ```
-
-2. Create a superuser
-    ```sh
-    python manage.py createsuperuser
-    ```
-
-3. Collect static files
-    ```sh
-    python manage.py collectstatic
     ```
 
 ## Running the Project
