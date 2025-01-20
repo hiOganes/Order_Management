@@ -10,14 +10,8 @@ media
 # Postgres
 *.sql
 
-# Redis
-dump.rdb
-
 # Environment variables
 .env
-
-# Kubuntu
-.directory
 
 # Virtual environment
 .venv/
