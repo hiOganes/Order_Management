@@ -1,6 +1,6 @@
-# Project Title
+# Order management
 
-A brief description of the project and its purpose.
+Веб-приложение на Django для управления заказами в кафе
 
 ## Table of Contents
 
