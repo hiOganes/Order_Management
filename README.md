@@ -27,8 +27,8 @@
 2. Create and activate a virtual environment
     ```sh
     python -m venv venv
-    source venv/bin/activate for linux
-    venv\Scripts\activate for Windows
+    for linux: source venv/bin/activate
+    for Windows: venv\Scripts\activate
     ```
 
 3. Install dependencies
