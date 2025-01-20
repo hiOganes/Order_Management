@@ -15,11 +15,10 @@
 
 ## Technologies
 
-- Python 3.x
-- Django 3.x/4.x
-- PostgreSQL/MySQL/SQLite (choose the appropriate one)
-- Docker (optional)
-- Other technologies and libraries used
+- Python 3.13.0
+- Django 5.1.3
+- PostgreSQL 17.0
+- HTML
 
 ## Installation
 
