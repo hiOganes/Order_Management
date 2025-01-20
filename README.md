@@ -9,9 +9,6 @@
 - [Configuration](#configuration)
 - [Running the Project](#running-the-project)
 - [Testing](#testing)
-- [Development](#development)
-- [License](#license)
-- [Contacts](#contacts)
 
 ## Technologies
 
@@ -24,8 +21,7 @@
 
 1. Clone the repository
     ```sh
-    git clone https://github.com/your-username/project-name.git
-    cd project-name
+    git clone git@github.com:hiOganes/Order_Management.git
     ```
 
 2. Create and activate a virtual environment
