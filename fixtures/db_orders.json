@@ -1,455 +1,432 @@
 [
 {
-  "model": "orders.orders",
-  "pk": "05e6d39a-f51d-4b0d-8536-3dd1dc322e6a",
+  "model": "contenttypes.contenttype",
+  "pk": 1,
   "fields": {
-    "created_at": "2025-01-16T13:52:15.906Z",
-    "updated_at": "2025-01-16T13:52:15.906Z",
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "orders",
+    "model": "orders"
+  }
+},
+{
+  "model": "orders.orders",
+  "pk": "18388340-2a7d-407e-bc85-49d60b88a49d",
+  "fields": {
+    "created_at": "2025-01-20T15:17:59.152Z",
+    "updated_at": "2025-01-20T15:17:59.152Z",
     "table_number": 2,
     "items": [
       {
-        "sdsd": 3.0
+        "name": "Салат",
+        "price": 440.0
       }
     ],
-    "total_price": "3.00",
+    "total_price": "440.00",
     "status": "В ожидании"
   }
 },
 {
   "model": "orders.orders",
-  "pk": "09f33615-9ad8-44a8-99e3-2d0715f1ea45",
+  "pk": "f3748fde-c12a-4ca4-98a5-a6cb6df866ed",
   "fields": {
-    "created_at": "2025-01-16T13:51:54.457Z",
-    "updated_at": "2025-01-16T13:51:54.457Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
-    ],
-    "total_price": "3.00",
-    "status": "В ожидании"
-  }
-},
-{
-  "model": "orders.orders",
-  "pk": "16e4402a-a984-4398-b2b8-637dee6ad841",
-  "fields": {
-    "created_at": "2025-01-16T14:58:53.312Z",
-    "updated_at": "2025-01-16T14:58:53.312Z",
+    "created_at": "2025-01-20T09:05:25.351Z",
+    "updated_at": "2025-01-20T09:05:25.351Z",
     "table_number": 1,
     "items": [
       {
-        "a": 1.0
+        "name": "Пюре",
+        "price": 100.0
       },
       {
-        "b": 2.0
+        "name": "Компот",
+        "price": 50.0
       }
     ],
-    "total_price": "3.00",
+    "total_price": "150.00",
     "status": "В ожидании"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "273ba9cd-ba92-40d0-9990-0385489ff44d",
+  "model": "auth.permission",
+  "pk": 1,
   "fields": {
-    "created_at": "2025-01-16T13:28:24.298Z",
-    "updated_at": "2025-01-16T13:28:24.298Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "add_logentry"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "318b1c79-af19-4b5d-9bc2-8ecf8c5e513a",
+  "model": "auth.permission",
+  "pk": 2,
   "fields": {
-    "created_at": "2025-01-16T13:28:43.473Z",
-    "updated_at": "2025-01-16T13:28:43.473Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "change_logentry"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "3516b590-804d-406e-888a-63f702dd2821",
+  "model": "auth.permission",
+  "pk": 3,
   "fields": {
-    "created_at": "2025-01-16T15:22:46.270Z",
-    "updated_at": "2025-01-16T15:22:46.270Z",
-    "table_number": 1,
-    "items": [
-      {
-        "a": 1.0
-      },
-      {
-        "b": 2.0
-      }
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "delete_logentry"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "3b0ff65f-8cf4-4c5a-ad48-d3b847bb4c2f",
+  "model": "auth.permission",
+  "pk": 4,
   "fields": {
-    "created_at": "2025-01-16T13:33:43.131Z",
-    "updated_at": "2025-01-16T13:33:43.131Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "view_logentry"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "4545b2e4-af94-47f3-9d69-bd1cd83ffc07",
+  "model": "auth.permission",
+  "pk": 5,
   "fields": {
-    "created_at": "2025-01-16T13:52:36.864Z",
-    "updated_at": "2025-01-16T13:52:36.864Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "add_permission"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "4551d01f-505f-460c-8dfd-628ce0883505",
+  "model": "auth.permission",
+  "pk": 6,
   "fields": {
-    "created_at": "2025-01-16T15:21:07.809Z",
-    "updated_at": "2025-01-16T15:21:07.809Z",
-    "table_number": 1,
-    "items": [
-      {
-        "a": 1.0
-      },
-      {
-        "b": 2.0
-      }
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "change_permission"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "4935344a-27eb-40e6-a317-57c9af2fcf7f",
+  "model": "auth.permission",
+  "pk": 7,
   "fields": {
-    "created_at": "2025-01-16T13:48:14.358Z",
-    "updated_at": "2025-01-16T13:48:14.358Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "delete_permission"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "5227108f-3b01-4331-8f9b-4e79c77e3108",
+  "model": "auth.permission",
+  "pk": 8,
   "fields": {
-    "created_at": "2025-01-16T15:21:49.946Z",
-    "updated_at": "2025-01-16T15:21:49.946Z",
-    "table_number": 1,
-    "items": [
-      {
-        "a": 1.0
-      },
-      {
-        "b": 2.0
-      }
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "view_permission"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "663c2e1b-3d40-4d6a-a765-262c5244641b",
+  "model": "auth.permission",
+  "pk": 9,
   "fields": {
-    "created_at": "2025-01-16T13:26:31.912Z",
-    "updated_at": "2025-01-16T13:26:31.912Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "add_group"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "6bc17e03-92ca-43cf-a876-d338e005254c",
+  "model": "auth.permission",
+  "pk": 10,
   "fields": {
-    "created_at": "2025-01-16T14:59:12.334Z",
-    "updated_at": "2025-01-16T14:59:12.334Z",
-    "table_number": 1,
-    "items": [
-      {
-        "a": 1.0
-      },
-      {
-        "b": 2.0
-      }
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "change_group"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "72992839-ece0-4486-a462-e4f4d05d19b0",
+  "model": "auth.permission",
+  "pk": 11,
   "fields": {
-    "created_at": "2025-01-16T13:51:01.636Z",
-    "updated_at": "2025-01-16T13:51:01.636Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "delete_group"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "797a7ab7-8640-4ab2-9183-d9558be36b30",
+  "model": "auth.permission",
+  "pk": 12,
   "fields": {
-    "created_at": "2025-01-16T13:47:13.841Z",
-    "updated_at": "2025-01-16T13:47:13.841Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "view_group"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "8b175e9d-0fdf-43e4-9fed-a7095bbb70d6",
+  "model": "auth.permission",
+  "pk": 13,
   "fields": {
-    "created_at": "2025-01-16T13:51:51.666Z",
-    "updated_at": "2025-01-16T13:51:51.666Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can add user",
+    "content_type": [
+      "auth",
+      "user"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "add_user"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "93b83fb8-b3fb-444f-9a3c-2b725c7bf793",
+  "model": "auth.permission",
+  "pk": 14,
   "fields": {
-    "created_at": "2025-01-16T13:48:49.405Z",
-    "updated_at": "2025-01-16T13:48:49.405Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can change user",
+    "content_type": [
+      "auth",
+      "user"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "change_user"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "9a00c388-cfe7-4d70-84e3-5ebcbd65a327",
+  "model": "auth.permission",
+  "pk": 15,
   "fields": {
-    "created_at": "2025-01-16T14:59:25.661Z",
-    "updated_at": "2025-01-16T14:59:25.661Z",
-    "table_number": 1,
-    "items": [
-      {
-        "a": 1.0
-      },
-      {
-        "b": 2.0
-      }
+    "name": "Can delete user",
+    "content_type": [
+      "auth",
+      "user"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "delete_user"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "9fda16d8-687f-417f-b558-af25141b9c4c",
+  "model": "auth.permission",
+  "pk": 16,
   "fields": {
-    "created_at": "2025-01-16T13:50:44.802Z",
-    "updated_at": "2025-01-16T13:50:44.802Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can view user",
+    "content_type": [
+      "auth",
+      "user"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "view_user"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "aff88076-bc70-45fe-9ac8-d80faa0ea5af",
+  "model": "auth.permission",
+  "pk": 17,
   "fields": {
-    "created_at": "2025-01-16T13:15:21.045Z",
-    "updated_at": "2025-01-16T13:15:21.045Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "add_contenttype"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "b650cbaa-2c68-43a0-a61f-45821be685aa",
+  "model": "auth.permission",
+  "pk": 18,
   "fields": {
-    "created_at": "2025-01-16T13:31:35.061Z",
-    "updated_at": "2025-01-16T13:31:35.061Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "change_contenttype"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "bb1dc77b-d5a7-4b15-ac4d-adb8e2a63687",
+  "model": "auth.permission",
+  "pk": 19,
   "fields": {
-    "created_at": "2025-01-16T13:16:00.120Z",
-    "updated_at": "2025-01-16T13:16:00.120Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "delete_contenttype"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "bd04f418-96bc-48c7-a4d4-c33fd13dca40",
+  "model": "auth.permission",
+  "pk": 20,
   "fields": {
-    "created_at": "2025-01-16T13:50:49.103Z",
-    "updated_at": "2025-01-16T13:50:49.103Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "view_contenttype"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "c3496306-3b14-4efa-91dc-57610e28aa2f",
+  "model": "auth.permission",
+  "pk": 21,
   "fields": {
-    "created_at": "2025-01-16T13:20:17.710Z",
-    "updated_at": "2025-01-16T13:20:17.711Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "add_session"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "cb450766-0dfb-42c9-aa93-896b528b6486",
+  "model": "auth.permission",
+  "pk": 22,
   "fields": {
-    "created_at": "2025-01-16T13:51:24.050Z",
-    "updated_at": "2025-01-16T13:51:24.050Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "change_session"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "cd5033dd-d784-45cb-810d-81c507769c95",
+  "model": "auth.permission",
+  "pk": 23,
   "fields": {
-    "created_at": "2025-01-16T13:48:51.639Z",
-    "updated_at": "2025-01-16T13:48:51.639Z",
-    "table_number": 2,
-    "items": [
-      {
-        "sdsd": 3.0
-      }
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
     ],
-    "total_price": "3.00",
-    "status": "В ожидании"
+    "codename": "delete_session"
   }
 },
 {
-  "model": "orders.orders",
-  "pk": "ed655d8d-23ff-4493-aca6-9be5c9aab5fb",
+  "model": "auth.permission",
+  "pk": 24,
   "fields": {
-    "created_at": "2025-01-16T12:57:32.466Z",
-    "updated_at": "2025-01-16T12:57:32.466Z",
-    "table_number": 3,
-    "items": [
-      {
-        "Картошка": 200.0
-      },
-      {
-        "Макароны": 100.0
-      }
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
     ],
-    "total_price": "300.00",
-    "status": "В ожидании"
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add orders",
+    "content_type": [
+      "orders",
+      "orders"
+    ],
+    "codename": "add_orders"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change orders",
+    "content_type": [
+      "orders",
+      "orders"
+    ],
+    "codename": "change_orders"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete orders",
+    "content_type": [
+      "orders",
+      "orders"
+    ],
+    "codename": "delete_orders"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view orders",
+    "content_type": [
+      "orders",
+      "orders"
+    ],
+    "codename": "view_orders"
   }
 }
 ]

@@ -7,7 +7,28 @@ from apps.common.models import BaseModel
 
 
 class Orders(BaseModel):
+    """
+    Custom user model extending BaseModel.
+
+    Attributes:
+        table_number (int): Table number that makes the order.
+        items (json): List of ordered dishes and their prices.
+        total_price (decimal): The expected price of the dishes in the order.
+        status (str): Order status.
+
+    """
+
     class Status(models.TextChoices):
+        """
+        Custom user model extending TextChoices.
+
+        Attributes:
+            WAIT (tuple): Order pending.
+            DONE (tuple): The order is ready.
+            PAID (tuple): The order has been paid.
+
+        """
+
         WAIT = 'В ожидании', 'В ожидании'
         DONE = 'Готово', 'Готово'
         PAID = 'Оплачено','Оплачено'
