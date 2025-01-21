@@ -21,7 +21,7 @@ Web application for managing orders in a cafe
 
 1. Clone the repository
     ```
-    git clone git@github.com:hiOganes/Order_Management.git
+    git clone https://github.com/hiOganes/Order_Management.git
     ```
 
 2. Create and activate a virtual environment
