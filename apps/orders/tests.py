@@ -1,7 +1,11 @@
+# Built-in libraries
 from http import HTTPStatus
+# Framework libraries
 from django.urls import reverse
 from django.test import TestCase
-from .models import Orders
+# Other libraries
+# Project libraries
+from apps.orders.models import Orders
 
 class OrdersViewTests(TestCase):
     fixtures = ['fixtures/db_orders.json']

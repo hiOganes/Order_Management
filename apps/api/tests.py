@@ -1,5 +1,4 @@
 # Built-in libraries
-import json
 from http import HTTPStatus
 # Framework libraries
 from django.test import TestCase
