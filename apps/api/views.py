@@ -63,7 +63,6 @@ class ListOrdersAPIView(APIView):
         serializer = self.serializer_class(data=request.data)
         total_price = 0
         if serializer.is_valid():
-            print(serializer.validated_data)
             serializer.validated_data['total_price'] = 0
             for field in serializer.validated_data['items']:
                  serializer.validated_data['total_price'] += field['price']
