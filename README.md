@@ -42,6 +42,9 @@ Web application for managing orders in a cafe
     SECRET_KEY='your-secret-key'
     DATABASES = {"ENGINE": "django.db.backends.postgresql", "NAME": "your-name", "USER": "your-user", "PASSWORD": "your-password", "HOST": "localhost", "PORT": "5432"}
     ```
+    "The secret key can be obtained using function 
+    ```get_random_secret_key()``` ,
+    from: ```django.core.management.utils```"
 
 ## Configuration
 
